@@ -10,6 +10,3 @@ permissions:
 jobs:
   create_release:
     uses: reshadman/common-github-workflows/.github/workflows/label-driven-release.yml@main
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
