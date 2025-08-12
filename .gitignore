@@ -22,7 +22,10 @@ _ide_helper_models.php
 # Editors
 /.idea
 /.fleet
-/.vscode
+
+# We allow vscode config as formatter setup exists there
+#/.vscode
+/.vscode/launch.json
 
 # Misc
 phpunit.xml

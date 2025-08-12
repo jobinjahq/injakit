@@ -1,0 +1,19 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint",
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.configPath": "./.prettierrc",
+  "prettier.requireConfig": true,
+  "laravel-pint.enable": true
+}

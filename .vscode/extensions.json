@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "open-southeners.laravel-pint",
+    "esbenp.prettier-vscode",
+    "shufo.vscode-blade-formatter",
+    "laravel.vscode-laravel",
+    "alefragnani.project-manager",
+    "bradgashler.htmltagwrap",
+    "redhat.vscode-yaml",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-close-tag",
+    "patbenatar.advanced-new-file",
+    "marcoroth.stimulus-lsp",
+    "marcoroth.turbo-lsp"
+  ]
+}
