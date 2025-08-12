@@ -1,0 +1,15 @@
+name: Label-Driven Release
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  create_release:
+    uses: reshadman/common-github-workflows/.github/workflows/label-driven-release.yml@main
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

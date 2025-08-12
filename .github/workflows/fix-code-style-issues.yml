@@ -1,0 +1,13 @@
+name: Fix Code Style
+on: [push, pull_request]
+permissions:
+  contents: write
+jobs:
+  fix-style:
+    uses: reshadman/common-github-workflows/.github/workflows/fix-code-style-issues.yml@main
+    with:
+      fix-php: true
+      fix-blade: true
+      fix-js-css: true
+      blade-paths: 'resources/views/**/*.blade.php'
+      js-css-paths: 'resources/css/**/*.css resources/js/**/*.js'

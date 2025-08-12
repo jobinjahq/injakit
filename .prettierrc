@@ -1,0 +1,25 @@
+{
+  "overrides": [
+    {
+      "files": ["*.css"],
+      "options": {
+        "parser": "css",
+        "tabWidth": 4,
+        "printWidth": 180
+      }
+    },
+    {
+      "files": ["*.js"],
+      "options": {
+        "tabWidth": 4,
+        "printWidth": 140
+      }
+    },
+    {
+      "files": ["*.json"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+name: PHPStan
+
+on:
+  push:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+      - '.github/workflows/phpstan.yml'
+
+jobs:
+  phpstan:
+    uses: reshadman/common-github-workflows/.github/workflows/phpstan.yml@main
+

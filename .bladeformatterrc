@@ -1,0 +1,17 @@
+{
+    "indentSize": 4,
+    "wrapAttributes": "force-expand-multiline",
+    "wrapAttributesMinAttrs": 2,
+    "wrapLineLength": 180,
+    "endWithNewLine": true,
+    "noMultipleEmptyLines": true,
+    "useTabs": false,
+    "sortTailwindcssClasses": true,
+    "sortHtmlAttributes": "code-guide",
+    "noPhpSyntaxCheck": false,
+    "noSingleQuote": false,
+    "noTrailingCommaPhp": false,
+    "componentPrefix": ["x-"],
+    "phpVersion": "8.4",
+    "//customHtmlAttributesOrder": "id, href, class, data-.+"
+}

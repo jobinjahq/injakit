@@ -1,0 +1,64 @@
+{
+  "name": "@jobinjahq/injakit",
+  "description": "Stimulus controllers and Tailwind CSS components",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./resources/js/index.js",
+    "./controllers/*": "./resources/js/controllers/*",
+    "./css": "./resources/css/index.css",
+    "./css/*": "./resources/css/*"
+  },
+  "files": [
+    "resources/js/index.js",
+    "resources/js/controllers/",
+    "resources/css/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "stimulus",
+    "tailwind",
+    "css",
+    "controllers",
+    "frontend"
+  ],
+  "author": "Reza Shadman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jobinjahq/injakit.git"
+  },
+  "homepage": "https://injakit.io",
+  "bugs": {
+    "url": "https://github.com/jobinjahq/injakit/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": "^3.2.0",
+    "@hotwired/turbo": "^8.0.0",
+    "laravel-vite-plugin": "^2.0.0",
+    "tailwindcss": "^4.1.0",
+    "trix": "^2.1.0"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo": "^8.0.13",
+    "laravel-vite-plugin": "^2.0.0",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4.1.11",
+    "trix": "^2.1.15"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release:patch": "npm version patch --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "release:minor": "npm version minor --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "release:major": "npm version major --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "release:beta": "npm version prerelease --preid=beta --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "sync-composer": "node -e \"const pkg=require('./package.json'); const composer=require('./composer.json'); composer.version=pkg.version; require('fs').writeFileSync('composer.json', JSON.stringify(composer, null, 2) + '\\n');\""
+  }
+}
