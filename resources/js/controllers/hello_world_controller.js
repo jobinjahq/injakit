@@ -1,5 +1,5 @@
 export default class extends Controller {
     connect() {
-        console.log("Hello World!");
+        console.log("Hello World!!");
     }
 }
