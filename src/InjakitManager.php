@@ -5,7 +5,7 @@ namespace Injakit;
 class InjakitManager
 {
     public function helloWorld(): string
-    {
-        return 'Hello World!';
+{
+        return 'Hello World!!';
     }
 }
