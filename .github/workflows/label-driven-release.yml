@@ -1,4 +1,4 @@
-name: Label-Driven Release
+name: Release
 
 on:
   pull_request:
@@ -10,3 +10,5 @@ permissions:
 jobs:
   create_release:
     uses: reshadman/common-github-workflows/.github/workflows/label-driven-release.yml@main
+    secrets:
+      PAT: ${{ secrets.OWNER_PAT }}
