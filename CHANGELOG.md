@@ -1,4 +1,28 @@
 
+# Release 0.0.4 (2025-08-13)
+
+### Add blade MD support for vscode (#6)
+#### Breaking Changes
+
+- No breaking changes
+
+#### New Features
+
+- No new features
+
+#### Bug Fixes
+
+- No bug fixes
+### Automatically publish NPM with git version release tags (#5)
+- Use workflow template for publishing to NPM after the tags created in form x.x.x.*
+- We include version field in package.json, the workflow template for publishing just changes tag and publishes. 
+- An NPM token is required for publish to happen which must be set in repository secrets by name `NPM_TOKEN` in our repo.
+
+
+---
+
+
+
 # Release 0.0.3 (2025-08-12)
 
 ### Allow .vscode but ignore .vscode/launch.json (#4)
