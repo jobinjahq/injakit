@@ -1,4 +1,25 @@
 
+# Release 0.0.7 (2025-08-13)
+
+### Try personal access token strategy for NPM workflow trigger (#9)
+#### Breaking Changes
+
+- No breaking changes
+
+#### New Features
+
+- No new features
+
+#### Bug Fixes
+
+- Try personal access token strategy for NPM workflow trigger, so that
+it fixes our release then publish to NPM workflow
+
+
+---
+
+
+
 # Release 0.0.6 (2025-08-13)
 
 ### Use globe matching for npm publish workflow (#8)
