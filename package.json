@@ -53,12 +53,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "release:patch": "npm version patch --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
-    "release:minor": "npm version minor --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
-    "release:major": "npm version major --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
-    "release:beta": "npm version prerelease --preid=beta --no-git-tag-version && npm run sync-composer && git add . && git commit -m \"bump version to $(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
-    "sync-composer": "node -e \"const pkg=require('./package.json'); const composer=require('./composer.json'); composer.version=pkg.version; require('fs').writeFileSync('composer.json', JSON.stringify(composer, null, 2) + '\\n');\""
   }
 }
