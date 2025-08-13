@@ -1,4 +1,25 @@
 
+# Release 0.0.6 (2025-08-13)
+
+### Use globe matching for npm publish workflow (#8)
+#### Breaking Changes
+
+- No breaking changes
+
+#### New Features
+
+- No new features
+
+#### Bug Fixes
+
+- Fixes the issue with `npm-publish.yml` workflow not getting triggered
+on new tags, seems github uses glob matching and we were using regex.
+
+
+---
+
+
+
 # Release 0.0.5 (2025-08-13)
 
 ### Use better naming (#7)
