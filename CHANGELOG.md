@@ -1,4 +1,15 @@
 
+# Release 0.0.5 (2025-08-13)
+
+### Use better naming (#7)
+- Try to trigger and NPM auto release 
+- Use better naming for PHPStan workflow
+
+
+---
+
+
+
 # Release 0.0.4 (2025-08-13)
 
 ### Add blade MD support for vscode (#6)
