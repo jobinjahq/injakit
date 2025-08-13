@@ -15,5 +15,8 @@
   },
   "prettier.configPath": "./.prettierrc",
   "prettier.requireConfig": true,
-  "laravel-pint.enable": true
+  "laravel-pint.enable": true,
+  "files.associations": {
+    "*.blade.md": "blade"
+  }
 }
